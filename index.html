@@ -79,13 +79,10 @@
           switch(context.type) {
             case 'adCompleted':
               myGameInstance.SendMessage('PublishHandler', 'GetAward');
-              myGameInstance.SendMessage('PublishHandler', 'CloseAds');
-              console.log('adCompleted');
               break;
               
             default:
               myGameInstance.SendMessage('PublishHandler', 'CloseAds');
-              console.log('adDefault');
               break;
           }
         }
