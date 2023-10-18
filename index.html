@@ -79,6 +79,7 @@
           switch(context.type) {
             case 'adCompleted':
               myGameInstance.SendMessage('PublishHandler', 'GetAward');
+              myGameInstance.SendMessage('PublishHandler', 'CloseAds');
               break;
               
             default:
