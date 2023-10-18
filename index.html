@@ -81,9 +81,8 @@
               myGameInstance.SendMessage('PublishHandler', 'GetAward');
               myGameInstance.SendMessage('PublishHandler', 'CloseAds');
               break;
-
-            case 'adDismissed':
-            case 'adError':
+              
+            case default:
               myGameInstance.SendMessage('PublishHandler', 'CloseAds');
               break;
           }
